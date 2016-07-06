@@ -24,7 +24,7 @@ and open the template in the editor.
         echo "<table width='600'>";
         $u = 1;
         foreach ($xml->rack as $key => $value) {
-            if ($value->RackNo == 1) {
+            if ($value->RackNo == 2) {
                 $chkStart = $value->Start_UNo - $u;
                 //echo $chkStart . '<br/>';
                 if ($chkStart != 0) {
