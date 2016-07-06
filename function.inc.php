@@ -39,3 +39,39 @@ function add_rack($idc_id, $amount, $name, $label, $amountUnit) {
     }
     return true;
 }
+
+function add_item($item_name, $item_type, $item_model, $item_brand, $item_serial, $item_unit_size, $item_port_amount) {
+    $con = connection();
+    $sqlCommand = "INSERT INTO "
+            . "`item`(`item_name`, `item_type`, `item_model`, `item_brand`, `item_serial`, `item_unit_size`, `item_port_amount`) "
+            . "VALUES (:item_name,:item_type,:item_model,:item_brand,:item_serial,:item_unit_size,:item_port_amount)";
+    $sth = $con->prepare($sqlCommand);
+    $sth->execute(
+            array(
+                ":item_name" => $item_name,
+                ":item_type" => $item_type,
+                ":item_model" => $item_model,
+                ":item_brand" => $item_brand,
+                ":item_serial" => $item_serial,
+                ":item_unit_size" => $item_unit_size,
+                ":item_port_amount" => $item_port_amount
+            )
+    );
+    return $con->lastInsertId();
+}
+
+function add_item_detail() {
+//    $con = connection();
+//    $sqlCommand = "INSERT INTO `rack`(`idc_id`, `rack_label`, `rack_name`, `rack_unit_amount`) VALUES (:idc_id,:rack_label,:rack_name,:rack_unit_amount)";
+//    $sth = $con->prepare($sqlCommand);
+//    for ($i = 1; $i <= $amount; $i++) {
+//        $sth->execute(
+//                array(
+//                    ":idc_id" => $idc_id,
+//                    ":rack_label" => $i,
+//                    ":rack_name" => $name,
+//                    ":rack_unit_amount" => $amountUnit
+//                )
+//        );
+//    }
+}
