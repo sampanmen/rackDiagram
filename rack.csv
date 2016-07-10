@@ -1,0 +1,120 @@
+1,1,3,2,server,PBICPGCM01,SunFire V240,SUN microsystems,FN60510352
+1,1,5,1,switch,,Cisco 2800 series,Cisco,
+1,1,6,1,switch,PBIINTSW01,Catalyst 2950 series,Cisco,
+1,1,7,2,server,PBIESX01,ProLiant DL380p Gen8,HP,
+1,1,9,1,-,,BIG-IP 4000 Series,F5,f5-jqhr-egfo
+1,1,10,2,-,,JSA1500,Juniper,
+1,1,12,1,switch,I02726B,Quidway S2300 Series,HUAWEI,
+1,1,13,1,switch,,Catalyst 2950 Series,Cisco,
+1,1,14,1,switch,,Catalyst 2950 Series,Cisco,
+1,1,15,1,router,True V07698A,Cisco 1800 Series,Cisco,
+1,1,16,1,-,,BIG-IP 2000 Series,F5,
+1,1,17,1,-,,,,
+1,1,18,1,switch,,Catalyst 3850 24,Cisco,
+1,1,19,1,server,,Cisco 1120 Secure Access Control System,Cisco,FTX150450E7
+1,1,20,1,-,PBISSHVPN03,FirePass,F5,bip09 2248s s
+1,1,21,1,switch,,Catalyst 3560G Series,Cisco,
+1,1,22,1,router,True CCID=I02726,,Cisco,35601106244
+1,1,23,1,switch,PBINSDMZ03,Catalyst 2960G,Cisco,
+1,1,24,3,-,PBINSFW01,ISG 1000,Juniper,
+1,1,27,2,-,PBITMWAN01,Cisco 2800 eries,Cisco,
+1,1,29,1,switch,PBICONV01,Catalyst 3750G Series,Cisco,
+1,1,30,1,switch,PBINSDMZ01,Catalyst 2960G Series,Cisco,
+1,1,31,1,-,,SG900,BlueCoat,1213240199
+1,1,36,2,server,PBITWEB01,SunFire v240,SUN,FN60510092
+1,1,38,2,-,True CCID=I800194,Cisco 1900 Series,Cisco,
+1,1,40,1,-,True CCID=I01572B,,Cisco,FCZ1515C0TD
+1,1,42,1,switch,,S2750-28TP-EI-AC,HUAWEI,
+1,2,3,2,server,PBICPGCM02,SunFire v240,SUN,FN60510362
+1,2,5,1,-,,Cisco 2800 Series,Cisco,
+1,2,6,1,switch,PBIINTSW02,Catalyst 2950 Series,Cisco,
+1,2,7,2,server,PBIESX02,ProLiant DL380p Gen8,HP,
+1,2,9,1,-,,BIG-IP 4000 Series,F5,f5-tqqx-wurz
+1,2,10,2,server,PBICPGDEV02,SunFire v240,SUN,FN60510354
+1,2,12,1,server,PBIRSA01,System x3550,IBM,99H9888
+1,2,13,1,switch,,Catalyst 2960G Series,Cisco,
+1,2,14,1,switch,PBINSDMZ06,Catalyst 2950 Series,Cisco,
+1,2,15,1,switch,True CCID=I02727B,Quidway S2300 Series,HUAWEI,
+1,2,16,1,router,True CCID=V07398A,Cisco 1800 Series,Cisco,
+1,2,17,1,server,PBIPOCDEV01/PBIAUTHWEB01,,IBM,99C0044
+1,2,18,1,switch,,Catalyst 3850 24,Cisco,
+1,2,19,1,server,,Cisco 1120 Secure,Cisco,FTX150450E6
+1,2,20,1,-,,FirePass,F5,bip09 0083 s
+1,2,21,1,-,True CCID=I02727,,Cisco,35601106245
+1,2,23,1,switch,,Catalyst 2960G Series,Cisco,
+1,2,24,3,-,PBINSFW02,ISG 1000,Juniper,
+1,2,27,2,-,PBITMWAN02,Cisco 2800 Series,Cisco,
+1,2,29,1,switch,PBICONV02,Catalyst 3750G Series,Cisco,
+1,2,30,1,switch,PBINSDMZ02,Catalyst 2960 Series,Cisco,
+1,2,32,4,proxy,,ProxySG,BlueCoat,
+1,2,36,2,server,PBITWEB02,SunFire v240,SUN,FN60510356
+1,2,38,2,-,True CCID=V80020A,Cisco 1900 Series,Cisco,
+1,2,40,1,-,,Cisco 1841,Cisco,FHK144870XN
+1,3,5,2,server,,SPARC Enterprise T5220,SUN,BEL0827TXA
+1,3,7,2,server,PBITS3100,System Storage,IBM,78AB111
+1,3,9,2,server,PBITSM01,IBM PowerLinux 7R1,IBM,060D0CA
+1,3,12,4,server,PBILDOM03,SPARC Enterprise T5440,SUN,
+1,3,16,4,server,PBIMED01,SunFire v440,SUN,0552BD0123
+1,3,21,1,-,,,,
+1,3,22,1,switch,PBICPTAPPSW01 (Temp),Catalyst 2960G,Cisco,
+1,3,23,1,switch,SW_01 UTIBA,Catalyst 2950,Cisco,
+1,3,24,1,-,,,Check Point,
+1,3,25,1,server,PBICPFW01,G4p,HP,
+1,3,27,1,switch,,,,
+1,3,27,1,switch,PBICPAPPSW03,Catalyst 2960G,Cisco,
+1,3,28,2,server,,Power 730,IBM,066E3DT
+1,3,30,2,server,,System x3650 M4,IBM,06XEZF6
+1,3,32,1,-,PBIAPPLB01,,F5,
+1,3,33,1,switch,PBICPNSSW01,Catalyst 2950,Cisco,
+1,3,34,1,switch,PBICPAPPSW01,,,
+1,3,35,1,-,PBIDMZLB01,BIG-IP 3900,F5,f5-jfkw-gcwy
+1,3,36,2,-,PBIxxx03,SunFire V240,SUN,FN60510079
+1,3,38,2,server,,Power 730,IBM,066E3FT
+1,3,40,2,server,PBIxxx01,SunFire V240,SUN,FN60510327
+1,13,39,1,switch,,,Cisco,
+1,13,37,1,switch,,,Cisco,
+1,13,35,1,switch,,,Cisco,
+1,13,33,1,switch,,,Cisco,
+1,13,31,2,server,PBIBGWDB02,Power 730,IBM,06F533R
+1,13,27,4,server,PBIBGWVIOS2,Power 750,IBM,061A28R
+1,13,21,1,server,PBIESX08,PowerEdge R630,DELL,
+1,13,20,1,server,,ProLiant DL360 Gen9,HP,
+1,13,17,2,server,,Power 730,IBM,066E3CT
+1,13,11,2,server,PBIESX06,ProLiant DL380p Gn8,hp,
+1,13,9,2,server,PBIESX04,ProLiant DL380p Gn8,hp,
+1,13,6,2,server,PBIESX01,ProLiant DL380p Gn8,hp,
+1,14,39,1,switch,,,Cisco,
+1,14,37,1,switch,,,Cisco,
+1,14,35,1,switch,,,Cisco,
+1,14,33,1,switch,,,Cisco,
+1,14,31,2,server,PBIBGWDB01,Power 730,IBM,06F533R
+1,14,27,4,server,PBIBGWVIOS1,Power 750,IBM,061A28R
+1,14,21,1,server,PBIESX07,PowerEdge R630,DELL,
+1,14,20,1,server,,ProLiant DL360 Gen9,HP,
+1,14,17,2,server,,Power 730,IBM,066E3CT
+1,14,11,2,server,PBIESX05,ProLiant DL380p Gn8,hp,
+1,14,9,2,server,PBIESX03,ProLiant DL380p Gn8,hp,
+1,14,6,2,server,PBIESX02,ProLiant DL380p Gn8,hp,
+1,14,24,1,server,,System x3550,IBM,06-AC07B
+1,16,1,1,network,,Juniper SRX240,Juniper,
+1,16,3,1,switch,PBIDEVSW01,Catalyst 2960-X,Cisco,
+1,16,4,1,switch,PBIDEVSW02,Catalyst 2960-X,Cisco,
+1,16,5,1,switch,PBIDEVSW05,Catalyst 2960-X,Cisco,
+1,16,6,1,switch,PBIDEVSW06,Catalyst 2960-X,Cisco,
+1,16,8,1,switch,,Catalyst 3850 48,Cisco,
+1,16,9,1,switch,,Catalyst 3850 48,Cisco,
+1,16,18,1,network,PBIDEVLB01,,F5,
+1,16,19,2,server,,SPARC Enterprise T5240,SUN,
+1,16,22,2,server,PBIESXDEV03,ProLiant DL380p Gen8,hp,
+1,16,24,2,server,PBIESXDEV05,System x3650 M4,IBM,
+1,16,1,1,network,,Juniper SRX240,Juniper,
+1,15,3,1,switch,PBIDEVSW03,Catalyst 2960-X,Cisco,
+1,15,4,1,switch,PBIDEVSW04,Catalyst 2960-X,Cisco,
+1,15,7,1,server,PBIDNS01,SunFire V120,Sun,FF60350026
+1,15,8,2,server,PBIREWAPP01,SunFire V240,Sun,
+1,15,10,2,server,PBIDEV02,SunFire V240,Sun,
+1,15,13,1,server,PBIFTP01,,hp,
+1,15,15,1,server,PBIFTP02,,hp,
+1,15,16,2,server,PBIDEV01,SunFire V240,Sun,
+1,15,18,2,server,PBIESXDEV04,ProLiant DL380p Gen8,hp,
+1,15,20,2,server,PBIESXDEV06,System x3650 M4,IBM,
