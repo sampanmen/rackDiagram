@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2016 at 07:26 PM
+-- Generation Time: Jul 20, 2016 at 07:30 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -336,30 +336,60 @@ CREATE TABLE IF NOT EXISTS `rack` (
   `idc_id` int(11) NOT NULL,
   `rack_label` varchar(50) NOT NULL,
   `rack_name` varchar(100) NOT NULL,
-  `rack_unit_amount` int(11) NOT NULL
+  `rack_unit_amount` int(11) NOT NULL,
+  `start_at` varchar(10) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `rack`
 --
 
-INSERT INTO `rack` (`rack_id`, `idc_id`, `rack_label`, `rack_name`, `rack_unit_amount`) VALUES
-(1, 1, '1', '-', 42),
-(2, 1, '2', '-', 42),
-(3, 1, '3', '-', 42),
-(4, 1, '4', '-', 42),
-(5, 1, '5', '-', 42),
-(6, 1, '6', '-', 42),
-(7, 1, '7', '-', 42),
-(8, 1, '8', '-', 42),
-(9, 1, '9', '-', 42),
-(10, 1, '10', '-', 42),
-(11, 1, '11', '-', 42),
-(12, 1, '12', '-', 42),
-(13, 1, '13', '-', 42),
-(14, 1, '14', '-', 42),
-(15, 1, '15', '-', 42),
-(16, 1, '16', '-', 42);
+INSERT INTO `rack` (`rack_id`, `idc_id`, `rack_label`, `rack_name`, `rack_unit_amount`, `start_at`) VALUES
+(1, 1, '1', '-', 42, 'up'),
+(2, 1, '2', '-', 42, 'up'),
+(3, 1, '3', '-', 42, 'up'),
+(4, 1, '4', '-', 42, ''),
+(5, 1, '5', '-', 42, ''),
+(6, 1, '6', '-', 42, ''),
+(7, 1, '7', '-', 42, ''),
+(8, 1, '8', '-', 42, ''),
+(9, 1, '9', '-', 42, ''),
+(10, 1, '10', '-', 42, ''),
+(11, 1, '11', '-', 42, ''),
+(12, 1, '12', '-', 42, ''),
+(13, 1, '13', '-', 42, 'down'),
+(14, 1, '14', '-', 42, 'down'),
+(15, 1, '15', '-', 42, 'down'),
+(16, 1, '16', '-', 42, 'down');
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `view_get_allitem`
+--
+CREATE TABLE IF NOT EXISTS `view_get_allitem` (
+`idc_id` int(11)
+,`rack_id` int(11)
+,`item_id` int(11)
+,`item_detail_id` int(11)
+,`idc_name` varchar(100)
+,`rack_label` varchar(50)
+,`rack_name` varchar(100)
+,`rack_unit_amount` int(11)
+,`item_name` varchar(100)
+,`item_type` varchar(50)
+,`item_unit_size` int(3)
+,`item_position` int(3)
+,`start_at` varchar(10)
+);
+-- --------------------------------------------------------
+
+--
+-- Structure for view `view_get_allitem`
+--
+DROP TABLE IF EXISTS `view_get_allitem`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_get_allitem` AS select `idc`.`idc_id` AS `idc_id`,`rack`.`rack_id` AS `rack_id`,`item`.`item_id` AS `item_id`,`item_detail`.`item_detail_id` AS `item_detail_id`,`idc`.`idc_name` AS `idc_name`,`rack`.`rack_label` AS `rack_label`,`rack`.`rack_name` AS `rack_name`,`rack`.`rack_unit_amount` AS `rack_unit_amount`,`item`.`item_name` AS `item_name`,`item`.`item_type` AS `item_type`,`item`.`item_unit_size` AS `item_unit_size`,`item_detail`.`item_position` AS `item_position`,`rack`.`start_at` AS `start_at` from (((`item_detail` join `rack` on((`item_detail`.`rack_id` = `rack`.`rack_id`))) join `item` on((`item`.`item_id` = `item_detail`.`item_id`))) join `idc` on((`idc`.`idc_id` = `rack`.`idc_id`)));
 
 --
 -- Indexes for dumped tables
