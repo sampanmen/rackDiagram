@@ -16,9 +16,27 @@
 
 function get_idc_all() {
     $con = connection();
+    $sqlCommand = "SELECT * FROM `view_get_allitem`";
+    $sth = $con->prepare($sqlCommand);
+    $sth->execute();
+    $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function get_item_all() {
+    $con = connection();
     $sqlCommand = "SELECT * FROM `idc`";
     $sth = $con->prepare($sqlCommand);
     $sth->execute();
+    $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function get_item_by_rack_id($rackid) {
+    $con = connection();
+    $sqlCommand = "SELECT * FROM `view_get_allitem` WHERE `rack_id` = :rack_id";
+    $sth = $con->prepare($sqlCommand);
+    $sth->execute(array(":rack_id" => $rackid));
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);
     return $result;
 }
